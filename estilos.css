@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+/*CUSTOM PROPERTIES*/
+:root{
+--Light-red-mio: hsl(0, 100%, 67%);
+--Orangey-yellow-mio: hsl(39, 100%, 56%);
+--Orangey-yellow: hsla(39, 100%, 56%, 0.152);
+--Green-teal: hsla(166, 100%, 37%, 0.164);
+--Green-teal-mio: hsl(166, 100%, 37%);
+--Cobalt-blue-mio: hsla(234, 85%, 45%, 0.181);
+--Cobalt-blue: hsl(234, 85%, 45%);
+--Light-red : hsla(0, 100%, 67%, 0.124);
+
+
+/*backgrounds*/
+--Light-slate-blue : hsl(252, 100%, 67%);
+--Light-royal-blue : hsl(241, 81%, 54%);
+
+--Violet-blue : hsla(256, 72%, 46%, 1);
+--Persian-blue : hsla(241, 72%, 46%, 0);
+
+/*Textos*/
+
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--Dark-gray-blue: hsl(224, 30%, 27%);
+
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.contenido_clima{
+    height: 250px;
+    background-image: linear-gradient(hsl(252, 100%, 67%) ,hsl(241, 81%, 54%) );
+    border-bottom-left-radius: 27px ;
+    border-bottom-right-radius: 27px ;
+}
+.contenido_informacion_clima{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.title_clima{
+    padding: 20px 0 10px ;
+    color: var(--Pale-blue);
+    font-size: 14px;
+}
+.circle_clima{
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 50px;
+    background-image: linear-gradient( rgb(76, 26, 213) ,hsla(252, 100%, 67%, 0.126) );
+}
+
+.number_clima{
+    color: var(--White);
+    font-size: 44px;
+    padding-top: 14px;
+}
+.text_clima{
+    color:rgb(200, 200, 200);
+    font-size: 11px;
+    margin-top: -5px;
+}
+
+.subtitulos_clima_texto{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: var(--White);
+}
+
+.title_great{
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.paragraph_great{
+    font-size: 12px;
+}
+
+/*segunda seccion*/
+
+.contenido_sumary{
+    width: 90%;
+    margin: 0 auto;
+}
+.title_sumary{
+    font-size: 18px;
+    color: var(--Dark-gray-blue);
+    margin: 15px 0 ;
+}
+
+.contenido_elementos_img{
+    justify-content: space-between;
+    padding: 10px;
+    display: flex;
+    background-color: var(--Light-red);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.text_img{
+    display: flex;
+    gap: 7px ;
+}
+.text_sumary{
+    color: var(--Light-red-mio);
+}
+.text_porcentaje_sumary span{
+    color: black;
+    font-weight: bold;
+}
+.text_porcentaje_sumary {
+    color: rgb(108, 108, 108);
+}
+/*segundo hijo*/
+.contenido_elementos_img:nth-child(3){
+    background-color: var(--Orangey-yellow);
+}
+.memory{
+    color: var(--Orangey-yellow-mio);
+}
+
+/*tercer hijo*/
+.contenido_elementos_img:nth-child(4){
+    background-color: var(--Green-teal);
+}
+.verbal{
+    color: var(--Green-teal-mio);
+}
+
+/*cuarto hijo*/
+.contenido_elementos_img:nth-child(5){
+    background-color: var(--Cobalt-blue-mio);
+}
+.visual{
+    color: var(--Cobalt-blue);
+}
+
+/*boton*/
+.siu{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: var(--Dark-gray-blue);
+    text-decoration: none;
+    justify-content: center;
+    padding: 12px;
+    color: var(--White);
+    border-radius: 25px;
+    text-align: center;
+}
+
+
+@media (min-width:675px){
+.section_contenido_total_absoluto{
+    display: flex;
+    width: 75%;
+    box-shadow: 1px 7px 20px rgba(95, 131, 213, 0.31);
+    margin: 0 auto;
+    margin-top: 150px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.contenido_clima{
+    width: 50%;
+    height: 100%;
+}
+.contenido_clima{
+    border-radius: 27px ;
+}
+.title_clima{
+    padding: 20px 0;
+    font-size: 16px;
+}
+.number_clima{
+    font-size: 50px;
+}
+.circle_clima{
+    height: 110px;
+    width: 110px;
+    border-radius: 55px;
+}
+.text_clima{
+    font-size: 13px;
+}
+.title_great{
+    font-size: 25px;
+    margin: 15px;
+}
+.paragraph_great{
+    margin-top: 35px;
+    font-size: 13px;
+}
+
+
+
+
+
+
+.sumary{
+    width: 50%;
+    height: 100%;
+}
+.title_sumary{
+    font-size: 25px;
+}
+.contenido_elementos_img{
+    margin-bottom: 15px;
+}
+
+.siu{
+    margin-top: 30px;
+}
+
+}
